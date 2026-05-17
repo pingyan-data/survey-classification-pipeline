@@ -44,7 +44,7 @@ from config import (
     PIP_REQUIREMENTS,
 )
 
-# These are custom preprocessing steps — replace with your own implementations
+# These are custom preprocessing steps 
 from preprocessing import (
     BaseTableInitializer,
     FeatureCurator,
@@ -86,7 +86,7 @@ class SurveyClassificationPipeline(BasePipeline):
             feature_file   = None,
         )
         pipeline.fit(X)
-        pipeline.register("product_interest_model", schema="your_schema")
+        pipeline.register("product_interest_model", schema="product_schema")
     """
 
     def __init__(
